@@ -1,7 +1,7 @@
 Piezo
 =====
 
-System to operate and manage a [Quartz Scheduler](http://quartz-scheduler.org/documentation/quartz-2.2.x/quick-start) cluster.
+System to operate and manage a [Quartz Scheduler](http://quartz-scheduler.org/documentation/quartz-2.2.x/quick-start) cluster. 
 
 
 ##Worker
