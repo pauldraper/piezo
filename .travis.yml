@@ -27,7 +27,7 @@ jdk:
   - oraclejdk8
 language: scala
 script:
-  - '[ "$TRAVIS_PULL_REQUEST" != false ] || export SBT_OPTS=-Dbuild.version=${TRAVIS_TAG:-$TRAVIS_BRANCH-SNAPSHOT}'
+  - '[ "$TRAVIS_PULL_REQUEST" != false ] || export SBT_OPTS+=" -Dbuild.version=${TRAVIS_TAG:-$TRAVIS_BRANCH-SNAPSHOT}"'
   - |
     if [ "$TRAVIS_SECURE_ENV_VARS" == true ]; then
       echo "$PGP_SECRET" | base64 --decode | gpg --import
